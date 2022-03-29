@@ -1,4 +1,4 @@
-FROM docker.io/library/node
+FROM quay.io/app-sre/ubi8-nodejs-14
 COPY index.js .
 COPY message.txt .
 COPY package.json .

@@ -27,7 +27,9 @@ const getMessage = () => {
     const data = fs.readFileSync('./message.txt', 'UTF-8');
     let lines = "";
     data.split(/\r?\n/).forEach(line =>  {
-        lines = lines + `<li>${line}</li>`;
+        if(line && line.length > 1){
+            lines = lines + `<li>${line}</li>`;
+        }
     });
     return `<ul>${lines}</ul>`
 }
