@@ -9,7 +9,7 @@ A simple Node.js web server for experimental purposes
 
 # Execution
 
-`node indes.js`
+`node index.js`
 
 It's a web app that runs on port `3001` and delivers a message.
 
